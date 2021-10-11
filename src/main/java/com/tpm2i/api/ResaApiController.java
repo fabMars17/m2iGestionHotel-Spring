@@ -23,7 +23,7 @@ public class ResaApiController {
 
     @GetMapping(path = "", produces = "application/json")
     public Iterable<Resa> getAll( HttpServletRequest request ){
-        System.out.println( "\nVal recherchée = "+ request.getParameter("search") + "\n" );
+        //System.out.println( "\nVal recherchée = "+ request.getParameter("search") + "\n" );
         return rs.getListByClientName( request.getParameter("search") );
     }
     /*List<Resa> all() {

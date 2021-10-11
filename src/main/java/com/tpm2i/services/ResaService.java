@@ -152,20 +152,9 @@ public class ResaService {
             }
         }
 
-
-
         if(r.length()!= 0) {
             throw new Exception(r);
         }
         return new ResponseEntity<String>(HttpStatus.ACCEPTED);
     }
-/*
-    class User2 {
-
-        User1 user;
-
-        public User1 getUser1Object() {
-            return user;
-        }
-    }*/
 }

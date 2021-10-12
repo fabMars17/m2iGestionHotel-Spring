@@ -34,7 +34,7 @@ public class ResaApiController {
     Resa get( @PathVariable("id") int id ) {
         return rs.get(id);
     }
-    
+
     @PostMapping(path = "", produces = "application/json")
     public ResponseEntity<Resa> addClientApi(@RequestBody Resa c) throws Exception {
         try{

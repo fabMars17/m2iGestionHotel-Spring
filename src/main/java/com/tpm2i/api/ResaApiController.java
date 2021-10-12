@@ -34,16 +34,7 @@ public class ResaApiController {
     Resa get( @PathVariable("id") int id ) {
         return rs.get(id);
     }
-
-    @GetMapping(path="/byc", produces = "application/json")
-    public Iterable<Resa> getAllByC(  ){
-        //System.out.println( "\nVal recherchée = "+ request.getParameter("search") + "\n" );
-        //return rs.getListByClient( request.getParameter("search") );
-        //rs.checkDateResa( "Maire","Three Seasons Hotel London at Ten Trinity Square",56 );
-        return rs.getListByClient( "Maire","a",56 );
-    }
-
-
+    
     @PostMapping(path = "", produces = "application/json")
     public ResponseEntity<Resa> addClientApi(@RequestBody Resa c) throws Exception {
         try{
